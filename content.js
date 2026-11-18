@@ -1,11 +1,11 @@
 // EDIT ME: captions, photo files and the letter live here.
 window.CONTENT = {
   photos: [
-    { src: 'assets/images/photo-1.jpg', caption: 'Where it all began' },
-    { src: 'assets/images/photo-2.jpg', caption: 'A day worth remembering' },
-    { src: 'assets/images/photo-3.jpg', caption: 'Smiles that stay' },
-    { src: 'assets/images/photo-4.jpg', caption: 'Good company, good times' },
-    { src: 'assets/images/photo-5.jpg', caption: 'And many more to come' }
+    { src: 'photo-1.jpg', caption: 'Where it all began' },
+    { src: 'photo-2.jpg', caption: 'A day worth remembering' },
+    { src: 'photo-3.jpg', caption: 'Smiles that stay' },
+    { src: 'photo-4.jpg', caption: 'Good company, good times' },
+    { src: 'photo-5.jpg', caption: 'And many more to come' }
   ],
   letter: [
     'Happy Birthday Sikandar! ❤️',
