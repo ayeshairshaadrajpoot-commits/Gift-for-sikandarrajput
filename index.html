@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Sikandar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/style.css">
+</head><body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<header class="hero"><h1>Happy Birthday, Sikandar</h1><p>Three little things were made just for you. Scroll down.</p>
+<nav><a href="#gallery">Memories</a><a href="#gift">Surprise</a><a href="#spinner">Spinner</a></nav></header>
+<main>
+<section id="gallery"><h2>A Few Special Memories</h2><div class="grid" id="grid"></div></section>
+<section id="gift"><h2>A Little Surprise For You</h2><p class="hint" id="giftHint">Click the gift to reveal your surprise.</p>
+<div class="stage" id="stage">
+ <div class="box" id="box" role="button" tabindex="0" aria-label="Open gift"><div class="lid"><i class="rib"></i><b class="bow"></b></div><div class="base"><i class="rib"></i></div></div>
+ <div class="env" id="env" role="button" tabindex="0" aria-label="Open envelope" hidden><div class="mini"></div><div class="flap"></div><div class="pocket"></div></div>
+</div>
+<article class="paper" id="paper" hidden></article></section>
+<section id="spinner"><h2>A Special Surprise Awaits!</h2>
+<div id="locked" class="glass msg" hidden>You have already completed your birthday surprise. ❤️</div>
+<div id="game"><div class="wheelWrap"><div class="pointer"></div><div class="wheel" id="wheel"></div><div class="hub"></div></div>
+<p class="count" id="count">3 Spins Remaining</p><button class="btn" id="spinBtn">Spin</button><div class="chips" id="chips"></div></div>
+<div id="done" class="glass" hidden><p class="msg">Your surprise is complete! 🎉</p>
+<form id="form" novalidate><h3>Where Should We Send Your Prize Bond?</h3><p>Enter your WhatsApp/mobile number so we can contact you regarding your prize.</p>
+<label for="mobile">Mobile/WhatsApp Number</label><input id="mobile" inputmode="tel" autocomplete="tel" placeholder="03001234567" maxlength="20"><p class="err" id="err" role="alert"></p>
+<button class="btn" id="subBtn" type="submit">Submit</button></form>
+<p class="msg" id="thanks" hidden>Your birthday surprise has been successfully completed. Thank you! ❤️</p></div></section>
+</main>
+<div class="modal" id="modal" hidden><div class="card"><div class="burst">🎉</div><p>You won</p><h3 id="prize"></h3><button class="btn" id="cont">Continue</button></div></div>
+<script src="src/js/content.js"></script><script src="src/js/gallery.js"></script><script src="src/js/gift.js"></script><script src="src/js/spinner.js"></script><script src="src/js/app.js"></script>
+</body></html>
